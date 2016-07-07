@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="main.css" media="screen" charset="utf-8">
+  </head>
+  <body>
+
+    <section class="container">
+      <label class="label1 label">Pick a number: <input type="number text" value ="" name="quantity1" class="input1 userInput" /></label>
+      <label class="label1 label">Another number: <input type="number text" value ="" name="quantity2" class="input2 userInput" /></label>
+      <input type="submit" value="Calculate" class="button" />
+
+      <div name="value" class="answer"> </div>
+      <script type="text/javascript">
+      	console.dir(document.querySelector('.answer'));
+
+				document.querySelector('.button').onclick = calculate;
+				function calculate () {
+
+          answerDiv = document.querySelector('.answer')
+				  var userInput1 = document.querySelector('input[name="quantity1"]').value;
+				  var userInput2 = document.querySelector('input[name="quantity2"]').value;
+				  var sum = Number(userInput1) + Number(userInput2);
+
+          if (Number(userInput1) == NaN || Number(userInput2) == NaN) {
+            answerDiv.innerHTML =  "You can only enter numbers (no text/spelling of them)!";
+          }
+
+          //This is working with infinity but not yet for when user inputs "1.2".
+
+          else if (Number(userInput1) !== NaN && Number(userInput2) !== NaN) {
+              userInput1 = Number(userInput1);
+              userInput2 = Number(userInput2);
+              sum = userInput1 + userInput2;
+              answerDiv.innerHTML = "The answer is: " + sum;
+          }
+
+          else {
+          answerDiv.innerHTML = "The answer is: " + sum;
+          }
+
+				}
+      </script>
+    </section>
+  </body>
+</html>

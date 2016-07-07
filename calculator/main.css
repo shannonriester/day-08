@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  background-image: url("https://dl.dropboxusercontent.com/u/19411356/unicorn.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  font: Arial;
+  color: turquoise; }
+
+section {
+  float: right;
+  margin-top: 2%;
+  margin-bottom: 15%;
+  width: 40%;
+  padding: 11% .1%;
+  text-align: center;
+  border: solid turquoise 2px;
+  margin-right: 21%; }
+
+label {
+  width: 30%;
+  display: inline-block;
+  position: relative; }
+
+/*# sourceMappingURL=main.css.map */

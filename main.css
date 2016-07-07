@@ -1,0 +1,227 @@
+body, header, footer {
+  margin: 0;
+  padding: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+/*- - - - - - -mobile view - - - - - - */
+main {
+  background-color: #EDEFED;
+  color: #007A87; }
+  main ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+    text-align: center;
+    font-size: 3em;
+    color: #FECF67; }
+  main li {
+    width: 100%; }
+
+.mountainImg {
+  display: none; }
+
+.townImg {
+  display: none; }
+
+.bikeImg {
+  float: left;
+  width: 50vw;
+  margin-bottom: -30rem; }
+  .bikeImg li:first-child {
+    height: 30rem;
+    background-image: url("https://dl.dropboxusercontent.com/u/19411356/day-07/RoadBike1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity, 1s ease-in-out;
+    position: relative; }
+    .bikeImg li:first-child:hover {
+      opacity: 0; }
+    .bikeImg li:first-child:hover {
+      opacity: 1; }
+  .bikeImg li:nth-child(2) {
+    height: 30rem;
+    background-image: url("https://dl.dropboxusercontent.com/u/19411356/day-07/MountainBike1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity, 1s ease-in-out;
+    position: relative;
+    bottom: 30rem; }
+    .bikeImg li:nth-child(2):hover {
+      opacity: 0; }
+
+.merchImg {
+  float: right;
+  width: 50vw;
+  margin-bottom: -30rem; }
+  .merchImg li:first-child {
+    height: 30rem;
+    background-image: url("https://dl.dropboxusercontent.com/u/19411356/day-07/Merchandise1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity, 1s ease-in-out;
+    position: relative; }
+    .merchImg li:first-child:hover {
+      opacity: 0; }
+    .merchImg li:first-child:hover {
+      opacity: 1; }
+  .merchImg li:nth-child(2) {
+    height: 30rem;
+    background-image: url("https://dl.dropboxusercontent.com/u/19411356/day-07/Merchandise3.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity, 1s ease-in-out;
+    position: relative;
+    bottom: 30rem; }
+    .merchImg li:nth-child(2):hover {
+      opacity: 0; }
+
+main::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+/*- - - - - media query for middle size - - - - -*/
+@media screen and (min-width: 765px) {
+  main {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-right: 0; }
+    main:last-child {
+      margin-right: 0; }
+
+  .bikeImg {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-right: 0; }
+    .bikeImg:last-child {
+      margin-right: 0; }
+
+  .merchImg {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .merchImg:last-child {
+      margin-right: 0; } }
+/*- - - - - - - - - biggest media query? - - - - - - - - - */
+@media screen and (min-width: 965px) {
+  .topRow {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .topRow:last-child {
+      margin-right: 0; }
+
+  .bikeImg {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%; }
+    .bikeImg:last-child {
+      margin-right: 0; }
+
+  .merchImg {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%; }
+    .merchImg:last-child {
+      margin-right: 0; }
+
+  .bottomRow {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    padding-top: 2.35765%; }
+    .bottomRow:last-child {
+      margin-right: 0; }
+
+  .mountainImg {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%; }
+    .mountainImg:last-child {
+      margin-right: 0; }
+
+  .mountainImg {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 40.29137%;
+    margin-bottom: -30rem;
+    float: left; }
+    .mountainImg:last-child {
+      margin-right: 0; }
+    .mountainImg li:first-child {
+      height: 30rem;
+      background-image: url("https://dl.dropboxusercontent.com/u/19411356/day-07/MountainBike2.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      transition: opacity, 1s ease-in-out;
+      position: relative; }
+      .mountainImg li:first-child:hover {
+        opacity: 0; }
+      .mountainImg li:first-child:hover {
+        opacity: 1; }
+    .mountainImg li:nth-child(2) {
+      height: 30rem;
+      background-image: url("https://dl.dropboxusercontent.com/u/19411356/day-07/MountainBike3.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      transition: opacity, 1s ease-in-out;
+      position: relative;
+      bottom: 30rem; }
+      .mountainImg li:nth-child(2):hover {
+        opacity: 0; }
+
+  .townImg {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 57.35098%;
+    margin-right: 0;
+    margin-bottom: -30rem; }
+    .townImg:last-child {
+      margin-right: 0; }
+
+  .townImg {
+    float: right; }
+    .townImg li:first-child {
+      margin-right: 0;
+      height: 30rem;
+      background-image: url("https://dl.dropboxusercontent.com/u/19411356/day-07/Austin1.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      transition: opacity, 1s ease-in-out;
+      position: relative; }
+      .townImg li:first-child:hover {
+        opacity: 0; }
+      .townImg li:first-child:hover {
+        opacity: 1; }
+    .townImg li:nth-child(2) {
+      height: 30rem;
+      background-image: url("https://dl.dropboxusercontent.com/u/19411356/day-07/Austin2.jpeg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      transition: opacity, 1s ease-in-out;
+      position: relative;
+      bottom: 30rem;
+      margin-right: 0; }
+      .townImg li:nth-child(2):hover {
+        opacity: 0; } }
+
+/*# sourceMappingURL=main.css.map */

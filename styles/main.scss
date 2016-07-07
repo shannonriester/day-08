@@ -1,0 +1,170 @@
+@import 'resets';
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+@import 'variables';
+@mixin imgLayout($img) {
+    height: rem(480);
+    background-image: url($img);
+    // background-size: contain;
+    // display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: opacity, 1s ease-in-out;
+    position: relative;
+    &:hover {
+        opacity: 0;
+    }
+}
+/*- - - - - - -mobile view - - - - - - */
+main {
+    background-color: $main-background-color;
+    color: $primary-color;
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        list-style-type: none;
+        text-align: center;
+        font-size: 3em;
+        color: $header-color;
+    }
+    li {
+        @include fill-parent;
+    }
+}
+.mountainImg {
+    display: none;
+}
+.townImg {
+    display: none;
+}
+.bikeImg {
+    float: left;
+    width: 50vw;
+    margin-bottom: -30rem;
+    li:first-child {
+        @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/RoadBike1.jpeg');
+        &:hover {
+            opacity: 1;
+        }
+    }
+    li:nth-child(2) {
+        @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/MountainBike1.jpeg');
+        bottom: 30rem;
+    }
+}
+.merchImg {
+    float: right;
+    width: 50vw;
+    margin-bottom: -30rem;
+    li:first-child {
+        @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/Merchandise1.jpeg');
+        &:hover {
+            opacity: 1;
+        }
+    }
+    li:nth-child(2) {
+        @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/Merchandise3.jpeg');
+        bottom: 30rem;
+    }
+}
+main {
+    @include clearfix();
+}
+/*- - - - - media query for middle size - - - - -*/
+@media screen and (min-width: 765px) {
+
+    main {
+
+        @include span-columns(12);
+        @include omega();
+    }
+
+
+
+    .bikeImg {
+      @include span-columns(6 of 12);
+      @include omega();
+    }
+
+    .merchImg{
+      @include span-columns(6 of 12);
+    }
+
+
+
+}
+/*- - - - - - - - - biggest media query? - - - - - - - - - */
+@media screen and (min-width: 965px) {
+
+
+
+      .topRow {
+        @include span-columns(12);
+      }
+
+      .bikeImg {
+        @include span-columns(7 of 12);
+      }
+
+      .merchImg {
+        @include span-columns(5 of 12);
+      }
+
+      .bottomRow {
+        @include span-columns(12);
+        padding-top: 2.35765%;
+      }
+
+      .mountainImg {
+        @include span-columns(5 of 12);
+      }
+
+      .mountainImg {
+        @include span-columns(5 of 12);
+        margin-bottom: -30rem;
+        float: left;
+        li:first-child {
+
+            @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/MountainBike2.jpeg');
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        li:nth-child(2) {
+            @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/MountainBike3.jpeg');
+            bottom: 30rem;
+
+            }
+
+        }
+
+      .townImg {
+        @include span-columns(7 of 12);
+        @include omega();
+        margin-bottom: -30rem;
+      }
+
+      .townImg {
+        float: right;
+
+        li:first-child {
+          @include omega();
+            @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/Austin1.jpeg');
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        li:nth-child(2) {
+            @include imgLayout( 'https://dl.dropboxusercontent.com/u/19411356/day-07/Austin2.jpeg');
+            bottom: 30rem;
+            @include omega();
+
+            }
+
+        }
+
+}
